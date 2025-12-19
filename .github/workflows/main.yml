@@ -1,0 +1,15 @@
+name: .github/workflows/main.yml
+on:
+  push:
+  schedule:
+    - cron: "20 4 * * *"
+jobs:
+  Test_and_publish_package:
+    runs-on: ubuntu-latest
+    name: Test and publish package
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ocicl/ocicl-action@main
+        env:
+          OCICL_REGISTRY_USERNAME: ${{ github.actor }}
+          OCICL_REGISTRY_PASSWORD: ${{ secrets.GHCR_TOKEN }}

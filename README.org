@@ -1,0 +1,9 @@
+* generic-arithmetic
+
+Generic arithmetic operations for Common Lisp.
+
+|---------+--------------------------------------------------------------|
+| source  | git:https://github.com/jrm-code-project/generic-arithmetic.git |
+| commit  | f0f62ff                                                      |
+| systems | generic-arithmetic                                           |
+|---------+--------------------------------------------------------------|
